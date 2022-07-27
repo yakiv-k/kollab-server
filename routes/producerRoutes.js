@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const knex = require("knex")(require("../knexfile"));
-// const knex = require("knex")(require("../knexfile").development);
 
 require("dotenv").config();
 
