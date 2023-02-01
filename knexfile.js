@@ -12,7 +12,7 @@ const connections = {
     },
   },
   production: {
-    client: "mysql2",
+    client: "mysql",
     connection: 'mysql://root:M0JYKWF8O8ZwLEa3FgrT@containers-us-west-98.railway.app:7651/railway',
     migrations: {
       directory: "./migrations",
