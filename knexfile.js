@@ -11,7 +11,7 @@ const connections = {
     },
   },
   production: {
-    client: "mysql2",
+    client: "mysql",
     connection: {
       host: "kollab-db.cscqquyuklfs.ca-central-1.rds.amazonaws.com",
       port: "3306",
