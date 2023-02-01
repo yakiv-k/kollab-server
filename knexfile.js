@@ -1,9 +1,8 @@
 require("dotenv").config();
 
-
 const connections = {
   development: {
-    client: "mysql",
+    client: "mysql2",
     connection: {
       host: process.env.DB_HOST,
       user: process.env.DB_USER,
@@ -13,7 +12,13 @@ const connections = {
   },
   production: {
     client: "mysql2",
-    connection: process.env.RAILWAYDB_URL,
+    connection: {
+      host: "kollab-db.cscqquyuklfs.ca-central-1.rds.amazonaws.com",
+      port: "3306",
+      user: "admin",
+      password: "kollabkollab",
+      database: "kollabDB",
+    },
     migrations: {
       directory: "./migrations",
     },
