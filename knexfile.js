@@ -13,7 +13,7 @@ const connections = {
   },
   production: {
     client: "mysql2",
-    connection: process.env.RAILWAYDB_URL,
+    connection: 'mysql://root:M0JYKWF8O8ZwLEa3FgrT@containers-us-west-98.railway.app:7651/railway',
     migrations: {
       directory: "./migrations",
     },
