@@ -11,15 +11,8 @@ const connections = {
     },
   },
   production: {
-    client: "mysql",
+    client: "mysql2",
     connection: process.env.RAILWAYDB_URL,
-    // connection: {
-    //   host: "kollab-db.cscqquyuklfs.ca-central-1.rds.amazonaws.com",
-    //   port: "3306",
-    //   user: "admin",
-    //   password: "kollabkollab",
-    //   database: "kollabDB",
-    // },
     migrations: {
       directory: "./migrations",
     },
