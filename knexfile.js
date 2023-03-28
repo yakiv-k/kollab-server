@@ -11,7 +11,7 @@ const connections = {
     },
   },
   production: {
-    client: "mysql",
+    client: "mysq2",
     connection: process.env.RAILWAYDB_URL,
     migrations: {
       directory: "./migrations",
